@@ -2,7 +2,7 @@ from typing import Dict, List, Optional, Union
 
 from fastapi import FastAPI
 
-import scraper
+from api import scraper
 
 app = FastAPI()
 SCRAPER = scraper.Scraper()
