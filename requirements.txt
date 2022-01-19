@@ -3,3 +3,4 @@ numpy
 pandas
 uvicorn
 yfinance
+pydantic
