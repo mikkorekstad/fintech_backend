@@ -2,11 +2,9 @@ import datetime
 
 import pandas as pd
 import yfinance as yf
-from pandas import DataFrame
 
 # import streamlit as st
 # import requests
-# import pandas as pd
 
 
 class Scraper:
@@ -81,7 +79,7 @@ class Scraper:
         # Return the results
         if api:
             return {
-                "recommendation": {"buy": f"{buy}", "sell": f"{sell}"},
+                "recommendation": {f"Recommendations: \n{buy=} \n{sell=}"},
                 "new_low": f"{new_low}",
                 "new_high": f"{new_high}",
                 "up_today": f"{up_today}",
